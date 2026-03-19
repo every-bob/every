@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>every</title>
+    <title>Portafolio Moderno</title>
+    <meta name="description" content="Portafolio profesional interactivo y moderno">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Hola Mundo</h1>
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+    
+    <nav class="navbar">
+        <div class="logo">Mi<span>Portafolio</span></div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+        </ul>
+    </nav>
+
+    <section id="inicio" class="hero section-reveal">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="Hola, soy Creativo">Hola, soy Creativo</h1>
+            <p class="subtitle">Desarrollador Web & Diseñador UI/UX</p>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn btn-primary">Ver Trabajos</a>
+                <a href="#contacto" class="btn btn-secondary">Contactar</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="skills section-reveal">
+        <h2>Mis Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>Frontend</h3>
+                <ul class="skill-list">
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React & Vue</li>
+                    <li>Animaciones CSS</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-server"></i>
+                <h3>Backend</h3>
+                <ul class="skill-list">
+                    <li>Node.js</li>
+                    <li>Python & Django</li>
+                    <li>Bases de Datos SQL/NoSQL</li>
+                    <li>APIs RESTful</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>Diseño</h3>
+                <ul class="skill-list">
+                    <li>Figma & Adobe XD</li>
+                    <li>Prototipado interactivo</li>
+                    <li>UI/UX Design</li>
+                    <li>Diseño Responsivo</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="portfolio section-reveal">
+        <h2>Mis Proyectos</h2>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+            <button class="filter-btn" data-filter="design">Diseño UI/UX</button>
+            <button class="filter-btn" data-filter="app">Apps Móviles</button>
+        </div>
+
+        <div class="gallery">
+            <div class="gallery-item" data-category="web">
+                <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-overlay">
+                    <h3>E-commerce Moderno</h3>
+                    <p>Desarrollo Web</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="design">
+                <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-overlay">
+                    <h3>Rediseño de Marca</h3>
+                    <p>Diseño UI/UX</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="app">
+                <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-overlay">
+                    <h3>App de Finanzas</h3>
+                    <p>Apps Móviles</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="web">
+                <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-overlay">
+                    <h3>Dashboard SaaS</h3>
+                    <p>Desarrollo Web</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="design">
+                <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-overlay">
+                    <h3>Prototipo Interactivo</h3>
+                    <p>Diseño UI/UX</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="app">
+                <div class="gallery-img" style="background-image: url('https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=600&q=80')"></div>
+                <div class="gallery-overlay">
+                    <h3>App de Salud</h3>
+                    <p>Apps Móviles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="footer-content">
+            <h2>¿Listo para empezar un proyecto?</h2>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <p>&copy; 2026 Creativo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
